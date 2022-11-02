@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nord Security Task</string>
+    <string name="start_server">Start server</string>
+    <string name="stop_server">Stop server</string>
+    <string name="server_address">Server address: %s</string>
+    <string name="permissions_message">This awesome application cannot work without your permission to use device features 😢</string>
+    <string name="rationale_message">This fantastic app is the best thing in the world, but it needs your permission to use device features. Without it the app won\'t work 😢</string>
+    <string name="grant_permission">Grant permission</string>
+    <string name="rationale_title">We need your permission</string>
+    <string name="rationale_deny">NO !!</string>
+    <string name="role_message">This awesome application cannot work if it\'s not set as a default Caller ID &amp; spam app 😢\n\nPlease note - if you checked \"Never ask again\" when asked for the role permission, the app won\'t be able to ask you again.</string>
+    <string name="grant_role">Grant role</string>
+
+</resources>

@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b37a623b71eb5d20835fb670969b8c12",
+    "entities": [
+      {
+        "tableName": "PhoneCall",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`beginning` TEXT NOT NULL, `number` TEXT NOT NULL, `name` TEXT, `duration` INTEGER NOT NULL, `timesQueried` INTEGER NOT NULL, PRIMARY KEY(`beginning`))",
+        "fields": [
+          {
+            "fieldPath": "beginning",
+            "columnName": "beginning",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "number",
+            "columnName": "number",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "duration",
+            "columnName": "duration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timesQueried",
+            "columnName": "timesQueried",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "beginning"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b37a623b71eb5d20835fb670969b8c12')"
+    ]
+  }
+}
